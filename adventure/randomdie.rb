@@ -55,7 +55,7 @@ die_num = die_num.to_f
 for i in (1..die_num)
  roll = rand(1..die_roll)
  print roll, " "
- avg_sum += roll
+ avg_sum += roll 
 end
 
 if die_num > 1

@@ -15,7 +15,7 @@ def rollDmg
 end
 
 def rollToHit
-
+    
     hit = 0
     hit = rand(1..20)
     return hit
@@ -44,7 +44,7 @@ loop {
     playerDefaultAtks.each_with_index { |i,v|
         puts "#{v} | #{i}"
     }
-
+    
     #checks if user picked a valid attack
     print "what would you like to do?: "
     user_input = gets.chomp
@@ -58,7 +58,7 @@ loop {
         inputCorrect = true
         wepMod = 1
     end
-
+    
     #player phase
     if inputCorrect == true
         puts "You used #{playerAtt}!"
@@ -99,7 +99,7 @@ loop {
     dmg = 0
     crit = false
     critfail = false
-
+    
     #enemy phase
     if inputCorrect == true
         puts "#{enemy} attacked!"
